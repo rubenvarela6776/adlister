@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 /**
  * Created by rubenvarela on 1/31/17.
  */
-@WebServlet(name = "AuthenticationServlet", urlPatterns = {"/login", "/profile"})
+//@WebServlet(name = "AuthenticationServlet", urlPatterns = {"/login", "/profile"})
 public class AuthenticationServlet extends HttpServlet {
     protected void doPost(
             HttpServletRequest request,
