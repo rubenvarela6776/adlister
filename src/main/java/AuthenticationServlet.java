@@ -23,15 +23,6 @@ public class AuthenticationServlet extends HttpServlet {
 
             request.getRequestDispatcher("profile.jsp").forward(request, response);
 
-//            writer.println("<!DOCTYPE html>");
-//            writer.println("<html>");
-//            writer.println("<head>");
-//            writer.println("</head>");
-//            writer.println("<body>");
-//            writer.println("<h1>Hi admin!</h1>");
-//            writer.println("<p>This is your profile</p>");
-//            writer.println("</body>");
-//            writer.println("</html>");
         } else {
             response.sendRedirect("/login");
         }
@@ -41,24 +32,6 @@ public class AuthenticationServlet extends HttpServlet {
         HttpServletRequest request,
         HttpServletResponse response
     ) throws ServletException, IOException {
-
         request.getRequestDispatcher("login.jsp").forward(request, response);
-
-//        PrintWriter writer = response.getWriter();
-//
-//        writer.println("<!DOCTYPE html>");
-//        writer.println("<html>");
-//        writer.println("<head>");
-//        writer.println("</head>");
-//        writer.println("<body>");
-//        writer.println("<form action='/profile' method='post'>");
-//        writer.println("<label>Username</label>");
-//        writer.println("<input type='text' name='username'>");
-//        writer.println("<label>Password</label>");
-//        writer.println("<input type='password' name='password'>");
-//        writer.println("<input type='submit' name='login' value='Login'>");
-//        writer.println("</form>");
-//        writer.println("</body>");
-//        writer.println("</html>");
     }
 }

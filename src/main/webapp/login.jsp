@@ -6,18 +6,18 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    if (request.getMethod().equalsIgnoreCase("post")) {
+<%--<%--%>
+    <%--if (request.getMethod().equalsIgnoreCase("post")) {--%>
 
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
+        <%--String username = request.getParameter("username");--%>
+        <%--String password = request.getParameter("password");--%>
 
-        if (username.equalsIgnoreCase("admin") && password.equals("password")) {
-            response.sendRedirect("profile.jsp");
-            return;
-        }
-    }
-%>
+        <%--if (username.equalsIgnoreCase("admin") && password.equals("password")) {--%>
+            <%--response.sendRedirect("profile.jsp");--%>
+            <%--return;--%>
+        <%--}--%>
+    <%--}--%>
+<%--%>--%>
 <html>
 <head>
     <title>Login</title>
